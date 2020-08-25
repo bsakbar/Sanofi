@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sanofi Portal</title>
+</head>
+<body>
+  <style>
+
+    body{
+      background-color:#C0E7F7;
+      overflow: hidden;
+    }
+    lottie-player{
+      margin-top: 22vh;
+      margin-left: 34vw;
+      z-index: +1 !important;
+      position: absolute;
+      animation: fadeInn ease-in 1s;
+    }
+
+    @keyframes fadeInn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+
+    @-moz-keyframes fadeInn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+
+    @-webkit-keyframes fadeInn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+
+    @-o-keyframes fadeInn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+
+    @-ms-keyframes fadeInn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+
+
+    .insight-clear-btn{
+      z-index: +2 !important;
+      margin-top: 40.5vh;
+      margin-left: 37vw;
+      width:11vw;
+      height:11vw;
+      border-radius: 100px;
+      /* background-color: red; */
+      opacity: 0.5;
+      position: absolute;
+    }
+    .problem-clear-btn{
+      z-index: +2 !important;
+      margin-top: 28vh;
+      margin-left: 51vw;
+      width:11vw;
+      height:11vw;
+      border-radius: 120px;
+      /* background-color: red; */
+      opacity: 0.5;
+      position: absolute;
+    }
+    .preparation-clear-btn{
+      z-index: +2 !important;
+      margin-top: 50.5vh;
+      margin-left: 48.5vw;
+      width:11vw;
+      height:11vw;
+      border-radius: 100px;
+      /* background-color: red; */
+      opacity: 0.5;
+      position: absolute;
+    }
+
+    .preparation-clear-btn:hover,
+    .problem-clear-btn:hover,
+    .insight-clear-btn:hover{
+      cursor:pointer;
+    }
+
+
+    svg{
+      padding-left: 11vw;
+      position: absolute;
+      width: 137vw;
+      height: auto;
+      x-index: -2 !important;
+    }
+
+    .title{
+      font-family: "LEAGUE GOTHIC";
+      font-size: 2vw;
+      margin-top: 20px;
+      margin-left: 20px;
+      color: #1B2326;
+      width: max-content;
+    }
+    .container{
+
+    }
+    .fade-in-3s {
+    animation: fadeIn ease-in 2s;
+    -webkit-animation: fadeIn ease-in 2s;
+    -moz-animation: fadeIn ease-in 2s;
+    -o-animation: fadeIn ease-in 2s;
+    -ms-animation: fadeIn ease-in 2s;
+    }
+
+    .fade-in-7s {
+    animation: fadeIn ease-in 7s;
+    -webkit-animation: fadeIn ease-in 7s;
+    -moz-animation: fadeIn ease-in 7s;
+    -o-animation: fadeIn ease-in 7s;
+    -ms-animation: fadeIn ease-in 7s;
+
+    }
+
+    @keyframes fadeIn {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    }
+
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    }
+
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    }
+
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    }
+
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    }
+
+    .dashedcircle {
+      stroke: #1B2326;
+      fill: none;
+      stroke-width: 0.5px;
+      animation: progress 2s ease-in forwards;
+      animation-direction: normal;
+  }
+
+  @keyframes progress {
+    from {
+      stroke-dasharray: 2000;
+      stroke-dashoffset: 2000;
+    }
+    to {
+      stroke-dasharray: 2000;
+      stroke-dashoffset: 0;
+    }
+  }
+
+
+  </style>
+
+<div class="container">
+<div class="clear-btns">
+  <div class="insight-clear-btn" onmouseover="showInsightBubbles()"></div>
+  <div class="problem-clear-btn" onmouseover="showProblemBubbles()"></div>
+  <div class="preparation-clear-btn" onmouseover="showPreparationBubbles()"></div>
+</div>
+<lottie-player src="sanofi-animation.json" background="transparent"  speed="0"  style="width:31vw; height: auto;"  loop autoplay></lottie-player>
+
+
+<div class="title">RECOMMENDED NAVIGATION FOR VIDEO/DEMO</div>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+   <defs>
+      <style>
+
+      .cls-1 {
+      	fill: none;
+      	stroke-width: 0.5px;
+      }
+
+      .cls-1,
+      .cls-14{
+      	stroke: #1b2326;
+      	stroke-miterlimit: 10;
+      }
+
+      .cls-1 {
+      	stroke-dasharray: 3 3;
+      }
+
+      .cls-1,
+      .cls-5 {
+      	opacity:1;
+      }
+
+
+      .path-lines-right{
+        animation: moveRight 1000ms alternate ease-in;
+        stroke: #1b2326;
+        fill: none;
+      	stroke-width: 0.5px;
+      }
+
+      @keyframes moveRight {
+        0% {
+          stroke-dasharray: 450;
+          stroke-dashoffset: 450;
+        }
+        100% {
+          stroke-dasharray: 450;
+          stroke-dashoffset: 0;
+        }
+      }
+
+      .path-lines-left{
+        animation: moveLeft 1000ms alternate ease-in;
+        stroke: #1b2326;
+        fill: none;
+        stroke-width: 0.5px;
+      }
+
+      @keyframes moveLeft {
+        0% {
+          stroke-dasharray: 450;
+          stroke-dashoffset: -450;
+        }
+        100% {
+          stroke-dasharray: 450;
+          stroke-dashoffset: 0;
+        }
+      }
+
+      .cls-2 {
+      	fill: #5ec7eb;
+      }
+
+      .cls-13,
+      .cls-3 {
+      	font-size: 19.55px;
+      }
+
+      .cls-11,
+      .cls-12,
+      .cls-3,
+      .cls-4 {
+      	fill: #1b2326;
+      }
+      .cls-5{
+        fill: #50646b;
+      }
+
+      .cls-11,
+      .cls-13,
+      .cls-3,
+      .cls-6 {
+      	font-family: LeagueGothic-Regular, League Gothic;
+      }
+
+      .cls-4,
+      .cls-7 {
+      	font-size: 10.5px;
+      	font-family: ArialMT, Arial;
+      }
+
+      .cls-11,
+      .cls-6 {
+      	font-size: 17px;
+      }
+
+
+      .cls-13,
+      .cls-15,
+      .cls-6,
+      .cls-7 {
+      	fill: #f5f2ee;
+      }
+
+      <!-- .cls-9 {
+      	stroke-dasharray: 3 3;
+      } -->
+
+      .cls-10 {
+      	fill: #e6f2f7;
+      }
+
+      .cls-14 {
+      	fill: #c0e7f7;
+      }
+
+      #a0, #a1, #a2, #a3, #a4, #a5, #a6, #a7, #a8, #a9, #a10, #a11,
+      #a12, #a13, #a14, #a15, #a16, #a17, #a18{
+        display: none;
+        position: relative;
+
+      }
+
+      .cls-12:hover{
+        fill: #37454a;
+        cursor:pointer;
+
+      }
+      .cls-2:hover{
+        fill: #4eaccc;
+        cursor:pointer;
+      }
+      .cls-3:hover{
+        fill: #4eaccc;
+        cursor:pointer;
+      }
+
+      .cls-15:hover{
+        fill: #fffbf5;
+        cursor:pointer;
+      }
+
+      .cls-14:hover{
+        stroke: #5EC7EB;
+        stroke-width: 2px;
+        cursor:pointer;
+      }
+
+      #line-1,
+      #line-2,
+      #line-3,
+      #line-4,
+      #line-5,
+      #line-6{
+        display: none;
+      }
+
+
+
+      </style>
+   </defs>
+   <g id="dashedcircle">
+      <g>
+         <path class="dashedcircle"
+        stroke-dasharray="1, 4"
+        d="M683,85.68c-165,0-298.82,133.79-298.82,298.82S518,683.32,683,683.32,981.82,549.53,981.82,384.5,848,85.68,683,85.68" transform="translate(-130 -30)"/>
+      </g>
+   </g>
+
+
+   <g id="lines">
+      <line id ="line-3" class="path-lines-right" x1="819.21" y1="140.93" x2="840.42" y2="133.82"/>
+      <line  id ="line-4" class="path-lines-right" x1="868.56" y1="263" x2="887.38" y2="275.95"/>
+      <path id ="line-1" class="path-lines-right" d="M915.87,132.16c14.32-39.15,61.06-63,87.79-63" transform="translate(-130.08 -23.68)"/>
+      <path id ="line-2" class="path-lines-right" d="M996.47,235.58c13.92-12.73,39.79-18.35,64-7.08" transform="translate(-130.08 -23.68)"/>
+      <path id ="line-5" class="path-lines-left" d="M296.85,363.47a104,104,0,0,0,62.81-29.7" transform="translate(-130.08 -23.68)"/>
+      <path id ="line-6" class="path-lines-left" d="M185.7,287.38a104.22,104.22,0,0,0,26.83,46.09" transform="translate(-130.08 -23.68)"/>
+   </g>
+   <g id="a11" class="fade-in-7s" data-name="11">
+     <path class="cls-2" d="M854.71,618.31a41.05,41.05,0,0,0-61.31-8.42l0,0a3.36,3.36,0,0,1-4.82.12,3.43,3.43,0,0,1-.85-2.84,13.43,13.43,0,0,0-2-9.51,13.5,13.5,0,1,0-6.44,20c1.05-.41,2-1.21,3.16-1.29,1.52-.11,2.38,1.39,2.46,2.73a5.59,5.59,0,0,1-.91,2.85,30.17,30.17,0,0,0-1.39,2.86,42.24,42.24,0,0,0-1.79,5.1,41.51,41.51,0,0,0-1.49,10.68A40.68,40.68,0,0,0,785,661.71c.32.55.66,1.1,1,1.63a41.05,41.05,0,0,0,68.66-45Z" transform="translate(-130.08 -23.68)"/>
+     <text class="cls-3" transform="translate(639.27 587.88)">11</text>
+     <text class="cls-4" transform="translate(660.42 605.74)">
+        Optimization
+        <tspan x="12.52" y="11.46">Engine </tspan>
+        <tspan x="-7.39" y="22.91">+ Measurement </tspan>
+        <tspan x="19.08" y="34.37">Hub</tspan>
+     </text>
+   </g>
+   <g id="a3" class="fade-in-7s" data-name="3">
+      <path class="cls-5 fade-in" d="M1089.13,313a33.21,33.21,0,0,0-37.36-28.45,32.19,32.19,0,0,0-4.45.92l0,0a2.72,2.72,0,0,1-3.56-1.6,2.78,2.78,0,0,1,.37-2.37A11.12,11.12,0,0,0,1046,277a10.93,10.93,0,1,0-11.65,9.23,9.37,9.37,0,0,1,2.75.16,2.1,2.1,0,0,1,.84,2.86,4.32,4.32,0,0,1-1.66,1.76,25.63,25.63,0,0,0-2,1.6,33.27,33.27,0,0,0-7.9,10.38,33,33,0,0,0-3.21,17.43c0,.52.1,1,.17,1.54a33.21,33.21,0,1,0,65.82-8.91Z" transform="translate(-130.08 -23.68)"/>
+      <text class="cls-6 fade-in" transform="translate(902.27 257.88)">3</text>
+      <text class="cls-7 fade-in" transform="translate(899.85 288.37)">
+         Accelerator
+         <tspan x="5.68" y="11.46">Scenario </tspan>
+         <tspan x="8.25" y="22.91">Planner</tspan>
+      </text>
+   </g>
+   <g id="a18" class="fade-in-7s" data-name="18">
+      <path class="cls-5" d="M977.93,163.64a33.21,33.21,0,0,0,44.81,14.07,34.18,34.18,0,0,0,3.87-2.37l0,0a2.71,2.71,0,0,1,3.88.29,2.74,2.74,0,0,1,.46,2.35,11.17,11.17,0,0,0-.16,4.88,10.51,10.51,0,0,0,1,2.94,10.92,10.92,0,1,0,6.78-15.58,9.11,9.11,0,0,1-2.64.78c-1.23,0-1.81-1.31-1.76-2.39a4.35,4.35,0,0,1,1-2.22c.48-.71.94-1.44,1.35-2.19a32.44,32.44,0,0,0,1.84-4,33.14,33.14,0,0,0-.83-26c-.22-.47-.45-.93-.69-1.39a33.21,33.21,0,0,0-58.88,30.74Z" transform="translate(-130.08 -23.68)"/>
+      <text class="cls-6" transform="translate(906.27 162.88)">18</text>
+      <text class="cls-7" transform="translate(851.13 123.08)">
+         Accelerator
+         <tspan x="7.67" y="11.46">Perform</tspan>
+      </text>
+   </g>
+   <g id="a2" class="fade-in-7s" data-name="2">
+      <path class="cls-5" d="M1077.1,270.5a33.22,33.22,0,0,0,46.5-6.66,34.73,34.73,0,0,0,2.46-3.81v0a2.72,2.72,0,0,1,3.63-1.42,2.81,2.81,0,0,1,1.43,1.93,10.81,10.81,0,0,0,4.16,6.67,10.93,10.93,0,1,0-.6-17c-.69.59-1.19,1.46-2.05,1.84-1.13.51-2.2-.4-2.62-1.4a4.39,4.39,0,0,1-.1-2.41c.13-.85.23-1.7.28-2.56a35.38,35.38,0,0,0,0-4.37,33.69,33.69,0,0,0-1.81-8.54,32.93,32.93,0,0,0-10.17-14.53c-.39-.32-.8-.64-1.21-1a33.21,33.21,0,1,0-39.84,53.15Z" transform="translate(-130.08 -23.68)"/>
+      <text class="cls-7" transform="translate(940.9 217.71)">
+         Accelerator
+         <tspan x="3.99" y="11.46">Optimizer</tspan>
+      </text>
+      <text class="cls-6" transform="translate(1009.27 240.88)">2</text>
+   </g>
+   <g id="a17" class="fade-in-7s" data-name="17">
+      <path class="cls-5" d="M1055.46,100.59a33.21,33.21,0,0,0,18.47-43.18,34.9,34.9,0,0,0-2-4.08l0,0a2.72,2.72,0,0,1,.68-3.84,2.79,2.79,0,0,1,2.39-.22,11.07,11.07,0,0,0,4.84.64,10.42,10.42,0,0,0,3-.73,10.92,10.92,0,1,0-14.82-8.31,9.42,9.42,0,0,1,.52,2.71,2.1,2.1,0,0,1-2.57,1.51,4.44,4.44,0,0,1-2.11-1.18c-.66-.55-1.33-1.07-2-1.56a33.2,33.2,0,0,0-12-5.12,33.13,33.13,0,0,0-17.7,1.13c-.49.17-1,.35-1.45.55a33.21,33.21,0,1,0,24.71,61.65Z" transform="translate(-130.08 -23.68)"/>
+      <text class="cls-6" transform="translate(944.27 21.88)">17</text>
+      <text class="cls-7" transform="translate(887.3 43.6)">
+         Accelerator
+         <tspan x="0.76" y="11.46">Landscape</tspan>
+      </text>
+   </g>
+   <g id="a6" class="fade-in-7s" data-name="6">
+      <path class="cls-10" d="M266.47,385.22A33.21,33.21,0,0,0,282.41,341a34.45,34.45,0,0,0-2.21-4l0,0a2.72,2.72,0,0,1,.45-3.88,2.76,2.76,0,0,1,2.37-.35,10.88,10.88,0,0,0,7.85-.55,10.91,10.91,0,1,0-15.29-7.43,9.2,9.2,0,0,1,.68,2.67c-.09,1.23-1.39,1.75-2.47,1.66a4.38,4.38,0,0,1-2.18-1.06,25.53,25.53,0,0,0-2.13-1.43,32.41,32.41,0,0,0-3.88-2,33.21,33.21,0,0,0-17.2-2.56,33.06,33.06,0,0,0-8.79,2.31c-.47.19-.95.4-1.41.62a33.21,33.21,0,0,0,28.24,60.12Z" transform="translate(-130.08 -23.68)"/>
+      <text class="cls-11" transform="translate(153.27 304.88)">6</text>
+      <text class="cls-4" transform="translate(112.5 322.83)">
+         HVA
+         <tspan x="-19.53" y="11.46">Journey Map</tspan>
+         <tspan x="-7.18" y="22.91">(image)</tspan>
+      </text>
+   </g>
+   <g id="a7" class="fade-in-7s" data-name="7">
+      <path class="cls-10" d="M172.18,214.54A33.2,33.2,0,0,0,148.26,255a33.86,33.86,0,0,0,1.43,4.3l0,0a2.72,2.72,0,0,1-1.18,3.72,2.75,2.75,0,0,1-2.39-.1,11.25,11.25,0,0,0-4.72-1.26,11.1,11.1,0,0,0-3.09.33,10.93,10.93,0,1,0,13.62,10.17,9.5,9.5,0,0,1-.16-2.76,2.09,2.09,0,0,1,2.74-1.16,4.37,4.37,0,0,1,1.94,1.44c.58.63,1.18,1.24,1.82,1.81a34.32,34.32,0,0,0,3.44,2.7,33.75,33.75,0,0,0,7.79,3.94,33.16,33.16,0,0,0,17.69,1.17c.51-.11,1-.22,1.51-.35a33.21,33.21,0,0,0-16.5-64.34Z" transform="translate(-130.08 -23.68)"/>
+      <text class="cls-11" transform="translate(8.27 254.88)">7</text>
+      <text class="cls-4" transform="translate(29.04 213.51)">
+         Audience
+         <tspan x="2.58" y="11.46">Console</tspan>
+         <tspan x="-1.1" y="22.91">(MIE app)</tspan>
+      </text>
+   </g>
+   <g id="a4" class="fade-in-7s" data-name="4">
+      <path class="cls-12" d="M678,67.5a41,41,0,0,0-52.94-23.82A42.32,42.32,0,0,0,620,46l0,0a3.35,3.35,0,0,1-4.73-.93,3.4,3.4,0,0,1-.21-3,13.83,13.83,0,0,0,.9-6,13.5,13.5,0,1,0-11.44,14.38c1.11-.17,2.21-.75,3.35-.58,1.51.22,2,1.87,1.82,3.2a5.51,5.51,0,0,1-1.51,2.59c-.69.8-1.36,1.62-2,2.48a40.35,40.35,0,0,0-2.84,4.6,41.47,41.47,0,0,0-3.77,10.11,40.91,40.91,0,0,0,1,21.89c.2.61.41,1.21.64,1.81A41.05,41.05,0,0,0,678,67.5Z" transform="translate(-130.08 -23.68)"/>
+      <text class="cls-13" transform="translate(469.27 20.88)">4</text>
+      <text class="cls-7" transform="translate(499.08 61.93)">DXA</text>
+   </g>
+   <g id="a16" class="fade-in-7s" data-name="16" onmouseover="showProblemBubbles_2()" >
+      <path class="cls-12" d="M942.86,179.91a41,41,0,0,0-39.36-42.68,40.18,40.18,0,0,0-5.61.16l.05,0a3.35,3.35,0,0,1-4-2.71,3.4,3.4,0,0,1,1-2.8,13.73,13.73,0,0,0,3.17-5.13,13.22,13.22,0,0,0,.7-3.78,13.5,13.5,0,1,0-16.87,12.51c1.09.28,2.33.19,3.32.79,1.3.8,1.13,2.52.41,3.66a5.4,5.4,0,0,1-2.4,1.78c-1,.47-1.89,1-2.79,1.52a40.93,40.93,0,0,0-19.52,31.46c-.05.64-.09,1.27-.12,1.91a41.05,41.05,0,0,0,82,3.33Z" transform="translate(-130.08 -23.68)"/>
+      <text class="cls-13" transform="translate(749.27 105.88)">16</text>
+      <text class="cls-7" transform="translate(742.38 147.37)">
+         Measurement
+         <tspan x="5.74" y="11.46">Framework</tspan>
+         <tspan x="3.74" y="22.91">Dashboards</tspan>
+      </text>
+   </g>
+   <g id="a0" class="fade-in-7s" data-name="0">
+      <path class="cls-14" d="M770.07,56.84a41,41,0,0,0-29.42,54.44l0,0a3.35,3.35,0,0,1-1.58,4.55,3.42,3.42,0,0,1-3-.2,13.83,13.83,0,0,0-5.78-1.74,13.33,13.33,0,0,0-3.83.31,13.49,13.49,0,1,0,16.46,13c0-1.12-.43-2.3-.1-3.41.43-1.46,2.14-1.74,3.42-1.34a5.45,5.45,0,0,1,2.35,1.85c.69.8,1.42,1.58,2.18,2.31a41.45,41.45,0,0,0,13.63,8.61,40.71,40.71,0,0,0,21.82,2.08c.63-.11,1.26-.23,1.88-.37a41.05,41.05,0,0,0-18-80.1Z" transform="translate(-130.08 -23.68)"/>
+      <text class="cls-3" transform="translate(596.27 110.88)">0</text>
+      <text class="cls-4" transform="translate(616.46 72.46)">
+         Central Sanofi
+         <tspan x="5.73" y="11.46">sharing hub</tspan>
+      </text>
+   </g>
+   <g id="a1" class="fade-in-7s" data-name="1" onmouseover="showProblemBubbles_3()">
+      <path class="cls-12" d="M948,220.84a41,41,0,0,0-29.36,54.48l0-.05a3.35,3.35,0,0,1-1.58,4.55,3.4,3.4,0,0,1-2.95-.19,13.76,13.76,0,0,0-5.78-1.73,13.5,13.5,0,1,0,9.76,21.8,13.57,13.57,0,0,0,2.88-8.46c0-1.13-.43-2.3-.11-3.41.43-1.46,2.14-1.74,3.42-1.35a5.47,5.47,0,0,1,2.35,1.85c.7.8,1.42,1.58,2.19,2.31a41.48,41.48,0,0,0,13.64,8.59,40.83,40.83,0,0,0,21.82,2.07c.63-.12,1.26-.24,1.88-.38A41.05,41.05,0,0,0,948,220.84Z" transform="translate(-130.08 -23.68)"/>
+      <text class="cls-13" transform="translate(774.27 274.88)">1</text>
+      <text class="cls-7" transform="translate(803.48 235.2)">
+         Advanced
+         <tspan x="2.05" y="11.46">Modeling</tspan>
+      </text>
+   </g>
+   <g id="a10" class="fade-in-7s" data-name="10">
+      <path class="cls-2" d="M944.32,432.59A41.06,41.06,0,0,0,1000.56,447a42,42,0,0,0,4.62-3.19l0,0a3.36,3.36,0,0,1,4.82.11,3.45,3.45,0,0,1,.72,2.87,13.38,13.38,0,0,0,1.59,9.59,13.51,13.51,0,1,0,7.36-19.68c-1.07.36-2.06,1.12-3.22,1.15-1.52,0-2.31-1.5-2.33-2.85a5.51,5.51,0,0,1,1-2.8,31.48,31.48,0,0,0,1.52-2.79,41,41,0,0,0-.72-37c-.3-.56-.61-1.12-.94-1.67a41.05,41.05,0,0,0-70.66,41.81Z" transform="translate(-130.08 -23.68)"/>
+      <text class="cls-3" transform="translate(887.27 432.88)">10</text>
+      <text class="cls-4" transform="translate(824.16 381.27)">
+         OS/Source
+         <tspan x="-2.82" y="11.46">(Sharepoint </tspan>
+         <tspan x="10.69" y="22.91">portal)</tspan>
+      </text>
+   </g>
+   <g id="a14" class="fade-in-7s" data-name="14">
+      <path class="cls-2" d="M989.67,488.43a41,41,0,0,0-54-21.24,40.42,40.42,0,0,0-5,2.59l0,0a3.34,3.34,0,0,1-4.76-.7,3.39,3.39,0,0,1-.36-2.94,13.71,13.71,0,0,0,.61-6,13.26,13.26,0,0,0-1-3.71A13.5,13.5,0,1,0,915.45,475c1.1-.22,2.18-.85,3.33-.74,1.52.15,2.11,1.78,2,3.11a5.53,5.53,0,0,1-1.37,2.66,31.22,31.22,0,0,0-1.86,2.58,41.85,41.85,0,0,0-2.62,4.73,41.13,41.13,0,0,0-3.27,10.27,40.88,40.88,0,0,0,2,21.82q.35.9.72,1.77a41.05,41.05,0,0,0,75.28-32.78Z" transform="translate(-130.08 -23.68)"/>
+      <text class="cls-3" transform="translate(776.27 444.88)">14</text>
+      <text class="cls-4" transform="translate(796.44 485.33)">Powerscore</text>
+   </g>
+   <g id="a13" class="fade-in-7s" data-name="13">
+      <path class="cls-2" d="M619.21,630.84a41,41,0,0,0-31.19,49,41.72,41.72,0,0,0,1.59,5.38l0-.05a3.36,3.36,0,0,1-1.6,4.55,3.46,3.46,0,0,1-3-.21,13.67,13.67,0,0,0-5.77-1.76,13.5,13.5,0,1,0,2,26.65,13.49,13.49,0,0,0,10.57-13.25c0-1.12-.42-2.3-.09-3.41.44-1.46,2.15-1.73,3.43-1.33a5.45,5.45,0,0,1,2.34,1.86,31.68,31.68,0,0,0,2.18,2.31,41,41,0,0,0,13.6,8.66,40.55,40.55,0,0,0,10.59,2.55,41,41,0,0,0,11.22-.39c.63-.11,1.25-.23,1.88-.37a41.05,41.05,0,1,0-17.78-80.16Z" transform="translate(-130.08 -23.68)"/>
+      <text class="cls-3" transform="matrix(1, 0.03, -0.03, 1, 441.1, 684.7)">13</text>
+      <text class="cls-4" transform="translate(465.46 647.7)">
+         Audience Hub
+         <tspan x="11.18" y="11.46">(MIE App</tspan>
+      </text>
+   </g>
+   <g id="a12" class="fade-in-7s" data-name="12">
+      <path class="cls-2" d="M885.6,622.86a41,41,0,0,0,51.59-26.62,39.68,39.68,0,0,0,1.33-5.45v.06a3.35,3.35,0,0,1,3.67-3.13,3.43,3.43,0,0,1,2.44,1.67,13.69,13.69,0,0,0,4.11,4.42,13.5,13.5,0,1,0,11.67-24,13.48,13.48,0,0,0-15.8,6.13c-.56,1-.8,2.19-1.64,3-1.11,1-2.73.42-3.63-.58a5.46,5.46,0,0,1-1.09-2.78c-.19-1-.43-2.08-.72-3.1a42.31,42.31,0,0,0-1.83-5.09,41.66,41.66,0,0,0-5.56-9.23,40.91,40.91,0,0,0-17.76-12.85c-.6-.22-1.21-.43-1.81-.62a41.05,41.05,0,1,0-25,78.21Z" transform="translate(-130.08 -23.68)"/>
+      <text class="cls-3" transform="translate(820.27 565.88)">12</text>
+      <text class="cls-4" transform="translate(750.56 550.32)">
+         Tracker
+         <tspan x="-21.33" y="11.46">+ Walled Garden </tspan>
+         <tspan x="-11.32" y="22.91">Optimization</tspan>
+      </text>
+   </g>
+   <g id="a15" class="fade-in-7s" data-name="15">
+      <path class="cls-2" d="M765.27,660a41,41,0,0,0-56.7-24.78l0,0a3.37,3.37,0,0,1-4.67-1.2,3.45,3.45,0,0,1-.05-3,13.71,13.71,0,0,0,1.25-5.91,13.31,13.31,0,0,0-.62-3.8,13.5,13.5,0,1,0-20.31,15.33,13.65,13.65,0,0,0,8.68,2.17c1.12-.11,2.25-.62,3.38-.39,1.5.31,1.92,2,1.63,3.3a5.6,5.6,0,0,1-1.65,2.5c-.74.76-1.45,1.54-2.12,2.37A40.37,40.37,0,0,0,691,651a40.94,40.94,0,0,0-4.61,31.78c.17.62.34,1.23.54,1.84A41,41,0,1,0,765.27,660Z" transform="translate(-130.08 -23.68)"/>
+      <text class="cls-3" transform="matrix(1, 0.03, -0.03, 1, 555.1, 608.7)">15</text>
+      <text class="cls-4" transform="translate(578.74 652.52)">Lumina</text>
+   </g>
+   <g id="a9" class="fade-in-7s" data-name="9">
+      <path class="cls-15" d="M431,460.15A41,41,0,0,0,373,462a40.4,40.4,0,0,0-3.55,4.35l0-.05a3.35,3.35,0,0,1-4.65,1.24,3.4,3.4,0,0,1-1.49-2.56,13.84,13.84,0,0,0-1.81-5.76,13.5,13.5,0,1,0-20.88,16.69,13.5,13.5,0,0,0,16.91,1.26c.92-.64,1.66-1.65,2.77-2,1.45-.46,2.64.8,3,2.08a5.46,5.46,0,0,1-.22,3c-.27,1-.51,2.05-.68,3.1a42.24,42.24,0,0,0-.53,5.38,40.87,40.87,0,0,0,11.56,30c.45.46.9.91,1.37,1.34A41.05,41.05,0,1,0,431,460.15Z" transform="translate(-130.08 -23.68)"/>
+      <text class="cls-3" transform="matrix(1, 0.03, -0.03, 1, 216.1, 448.7)">9</text>
+      <text class="cls-4" transform="translate(253.44 471.17)">VisionRx</text>
+   </g>
+   <g id="a8" class="fade-in-7s" data-name="8">
+      <path class="cls-15" d="M399.25,432.33a41,41,0,0,0,21.95-53.74,41.88,41.88,0,0,0-2.52-5l0,0a3.36,3.36,0,0,1,.76-4.76,3.41,3.41,0,0,1,2.95-.32,13.7,13.7,0,0,0,6,.69A13.5,13.5,0,1,0,415,349.46a13.62,13.62,0,0,0-1.36,8.84c.21,1.1.83,2.19.7,3.34-.17,1.51-1.81,2.09-3.14,1.92a5.5,5.5,0,0,1-2.63-1.41c-.83-.67-1.68-1.31-2.56-1.89a39.58,39.58,0,0,0-4.7-2.68,40.87,40.87,0,0,0-32.07-1.65c-.6.22-1.2.46-1.78.7a41.05,41.05,0,1,0,31.79,75.7Z" transform="translate(-130.08 -23.68)"/>
+      <text class="cls-3" transform="matrix(1, 0.03, -0.03, 1, 293.1, 338.7)">8</text>
+      <text class="cls-4" transform="translate(238.78 361.87)">
+         OESP
+         <tspan x="-5.64" y="11.46">Planning </tspan>
+         <tspan x="-8.49" y="22.91">(MIE App)</tspan>
+      </text>
+   </g>
+   <g id="a5" class="fade-in-7s" data-name="5" onmousemove="showInsightBubbles_2()">
+      <path class="cls-15" d="M430.93,283a41.06,41.06,0,0,0-58.28-20.81l0,0a3.36,3.36,0,0,1-4.74-.88,3.43,3.43,0,0,1-.25-3,13.66,13.66,0,0,0,.84-6,13.5,13.5,0,1,0-26,6.12,13.5,13.5,0,0,0,14.74,8.38c1.11-.18,2.2-.77,3.35-.61,1.51.21,2.05,1.85,1.85,3.18A5.4,5.4,0,0,1,361,272c-.68.81-1.34,1.64-1.94,2.51a41.81,41.81,0,0,0-2.79,4.63,41.33,41.33,0,0,0-3.65,10.15,40.82,40.82,0,0,0,1.25,21.88q.3.92.66,1.8a41,41,0,0,0,76.42-30Z" transform="translate(-130.08 -23.68)"/>
+      <text class="cls-3" transform="matrix(1, 0.03, -0.03, 1, 221.1, 236.7)">5</text>
+      <text class="cls-4" transform="translate(251.46 260.63)">
+         HVA
+         <tspan x="-11.41" y="11.46">HVA Tree</tspan>
+         <tspan x="-6.31" y="22.91">(splash </tspan>
+         <tspan x="-6.89" y="34.37">screen)</tspan>
+      </text>
+   </g>
+</svg>
+</div>
+  <script>
+    function showProblemBubbles() {
+      document.getElementById("a4").style.display = "block";
+      document.getElementById("a16").style.display = "block";
+      document.getElementById("a1").style.display = "block";
+      document.getElementById("a0").style.display = "block";
+
+    }
+
+
+    function showPreparationBubbles() {
+      document.getElementById("a10").style.display = "block";
+      document.getElementById("a11").style.display = "block";
+      document.getElementById("a12").style.display = "block";
+      document.getElementById("a13").style.display = "block";
+      document.getElementById("a14").style.display = "block";
+      document.getElementById("a15").style.display = "block";
+    }
+
+    function showInsightBubbles() {
+      document.getElementById("a5").style.display = "block";
+      document.getElementById("a8").style.display = "block";
+      document.getElementById("a9").style.display = "block";
+    }
+
+    function showProblemBubbles_2() {
+      document.getElementById("a17").style.display = "block";
+      document.getElementById("a18").style.display = "block";
+      document.getElementById("line-1").style.display = "block";
+      document.getElementById("line-3").style.display = "block";
+    }
+    function showProblemBubbles_3() {
+      document.getElementById("a2").style.display = "block";
+      document.getElementById("a3").style.display = "block";
+      document.getElementById("line-2").style.display = "block";
+      document.getElementById("line-4").style.display = "block";
+    }
+    function showInsightBubbles_2() {
+      document.getElementById("a6").style.display = "block";
+      document.getElementById("a7").style.display = "block";
+      document.getElementById("line-5").style.display = "block";
+      document.getElementById("line-6").style.display = "block";
+    }
+    function changeScale(){
+      document.getElementById("a").style.transform = "scale(1.2)";
+    }
+
+
+  </script>
+
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+</body>
+</html>
