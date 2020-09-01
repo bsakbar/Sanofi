@@ -3,8 +3,68 @@ body {
 	overflow: hidden;
 }
 
+#container{
+	padding-top:2vh;
+
+}
+
+.INI-logo{
+	margin-left: 2vw;
+	margin-top: 2vh;
+	/* transform: translate(10%, 30%); */
+	width: 12vw;
+	position: absolute;
+}
+
+.W-logo{
+	margin-left: 85vw;
+	margin-top: 2vh;
+	/* transform: translate(780%, 30%); */
+	width: 11vw;
+	position: absolute;
+}
+
+.show_all {
+	background: #5ec7eb;
+	padding-left: 7px;
+	padding-right: 7px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	position:absolute;
+	margin-left: 2vw;
+	margin-top: 83vh;
+	border-radius: 5px;
+	/* transform: translate(10%, 0%); */
+	font-family: ArialMT, Arial;
+	font-weight: 400;
+	font-size: 0.7vw;
+	color: #1B2326;
+	width: max-content;
+}
+
+.show_all:hover{
+	color: #f5f2ee;
+	cursor: pointer;
+
+}
+
+.title {
+	position: absolute;
+	/* transform: translate(10%, 2000%); */
+	margin-left: 2vw;
+	margin-top: 87vh;
+	font-family: league-gothic, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.7vw;
+	color: #1B2326;
+	width: max-content;
+}
+
 lottie-player {
-	transform: translate(120%, 35%);
+	/* margin-left: 35vw;
+	margin-top: 25vh; */
+	transform: translate(134%, 36%);
 	z-index: -5 !important;
 	position: absolute;
 	animation: fadeInn ease-in 1s;
@@ -57,9 +117,9 @@ lottie-player {
 
 .insight-clear-btn {
 	z-index: +2 !important;
-	transform: translate(329%, 160%);
-	width: 11vw;
-	height: 11vw;
+	transform: translate(372%, 166%);
+	width: 10vw;
+	height: 10vw;
 	border-radius: 120px;
 	/* background-color: red; */
 	opacity: 0.5;
@@ -68,9 +128,9 @@ lottie-player {
 
 .problem-clear-btn {
 	z-index: +2 !important;
-	transform: translate(418%, 99%);
-	width: 11vw;
-	height: 11vw;
+	transform: translate(465%, 105%);
+	width: 10vw;
+	height: 10vw;
 	border-radius: 120px;
 	/* background-color: red; */
 	opacity: 0.5;
@@ -79,9 +139,9 @@ lottie-player {
 
 .preparation-clear-btn {
 	z-index: +2 !important;
-	transform: translate(411%, 228%);
-	width: 11vw;
-	height: 11vw;
+	transform: translate(455%, 238%);
+	width: 10vw;
+	height: 10vw;
 	border-radius: 120px;
 	/* background-color: red; */
 	opacity: 0.5;
@@ -95,22 +155,13 @@ lottie-player {
 }
 
 svg {
-	/* padding-left: 11vw; */
 	position: absolute;
-	width: 125vw;
+	width: 115vw;
 	height: auto;
-	transform: translate(10%, -2%);
-}
+	transform: translate(13%, -2%);
+	/* margin-left: 10vw; */
+	margin-top: 5vh;
 
-.title {
-	font-family: league-gothic, sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 2vw;
-	margin-top: 20px;
-	margin-left: 20px;
-	color: #1B2326;
-	width: max-content;
 }
 
 .fade-in-3s {
@@ -397,6 +448,17 @@ svg {
 	}
 }
 
+.ripple-text{
+	font-size: 10.5px;
+	fill: #1b2326;
+	font-family: ArialMT, Arial;
+}
+
+.ripple-text:hover{
+	fill: #5EC7EB;
+	cursor: pointer;
+}
+
 .cls-2 {
 	fill: #5ec7eb;
 }
@@ -407,9 +469,7 @@ svg {
 }
 
 .cls-11,
-.cls-12,
-.cls-3,
-.cls-4 {
+.cls-12 {
 	fill: #1b2326;
 }
 
@@ -450,6 +510,19 @@ svg {
 	fill: #c0e7f7;
 }
 
+
+.cls-4:hover {
+	fill: #f5f2ee;
+}
+
+.cls-7:hover {
+	fill: #5EC7EB;
+}
+
+.toLink:hover {
+	cursor: pointer;
+}
+
 #a2,
 #a3,
 #a6,
@@ -470,21 +543,29 @@ svg {
 	cursor: pointer;
 }
 
-.cls-3:hover {
+/* .cls-3:hover {
 	fill: #4eaccc;
 	cursor: pointer;
-}
+} */
 
 .cls-15:hover {
 	fill: #fffbf5;
 	cursor: pointer;
 }
 
+.sharing-hub{
+	font-size: 10.5px;
+	font-family: ArialMT, Arial;
+}
+.sharing-hub:hover{
+fill:#5EC7EB;
+}
 .cls-14:hover {
 	stroke: #5EC7EB;
 	stroke-width: 2px;
 	cursor: pointer;
 }
+
 
 #line-1,
 #line-2,
