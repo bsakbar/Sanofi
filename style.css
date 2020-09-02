@@ -17,10 +17,10 @@ body {
 }
 
 .W-logo{
-	margin-left: 85vw;
+	margin-left: 79vw;
 	margin-top: 2vh;
 	/* transform: translate(780%, 30%); */
-	width: 11vw;
+	width: 18vw;
 	position: absolute;
 }
 
@@ -32,7 +32,7 @@ body {
 	padding-bottom: 5px;
 	position:absolute;
 	margin-left: 2vw;
-	margin-top: 83vh;
+	margin-top: 90vh;
 	border-radius: 5px;
 	/* transform: translate(10%, 0%); */
 	font-family: ArialMT, Arial;
@@ -52,11 +52,11 @@ body {
 	position: absolute;
 	/* transform: translate(10%, 2000%); */
 	margin-left: 2vw;
-	margin-top: 87vh;
+	margin-top: 2vh;
 	font-family: league-gothic, sans-serif;
 	font-weight: 400;
 	font-style: normal;
-	font-size: 1.7vw;
+	font-size: 2vw;
 	color: #1B2326;
 	width: max-content;
 }
@@ -474,7 +474,7 @@ svg {
 }
 
 .cls-5 {
-	fill: #50646b;
+	fill: #313f45;
 }
 
 .cls-11,
